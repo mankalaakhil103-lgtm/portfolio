@@ -2,318 +2,328 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Akhil | Developer Portfolio</title>
+    <title>Akhil | Developer Portfolio</title>
 
-<style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
+        /* NAVBAR */
 
-/* NAVBAR */
+        .navbar {
+            background: #131921;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 60px;
+        }
 
-.navbar{
-background:#131921;
-color:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 60px;
-}
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9900;
+        }
 
-.logo{
-font-size:24px;
-font-weight:bold;
-color:#ff9900;
-}
+        .navlinks a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
 
-.navlinks a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-size:16px;
-}
+        .navlinks a:hover {
+            color: #ff9900;
+        }
 
-.navlinks a:hover{
-color:#ff9900;
-}
+        /* HERO */
 
-/* HERO */
+        .hero {
+            background: linear-gradient(120deg, #232f3e, #37475a);
+            color: white;
+            padding: 120px 20px;
+            text-align: center;
+        }
 
-.hero{
-background:linear-gradient(120deg,#232f3e,#37475a);
-color:white;
-padding:120px 20px;
-text-align:center;
-}
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
 
-.hero h1{
-font-size:48px;
-margin-bottom:10px;
-}
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
 
-.hero p{
-font-size:20px;
-margin-bottom:25px;
-}
+        /* BUTTONS */
 
-/* BUTTONS */
+        .btn {
+            background: #ff9900;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+            display: inline-block;
+        }
 
-.btn{
-background:#ff9900;
-color:black;
-padding:12px 25px;
-border-radius:5px;
-text-decoration:none;
-font-weight:bold;
-margin:5px;
-display:inline-block;
-}
+        .btn:hover {
+            background: #f3a847;
+        }
 
-.btn:hover{
-background:#f3a847;
-}
+        /* SECTION */
 
-/* SECTION */
+        .section {
+            padding: 60px;
+            background: #f2f2f2;
+        }
 
-.section{
-padding:60px;
-background:#f2f2f2;
-}
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
 
-.section h2{
-font-size:32px;
-margin-bottom:40px;
-}
+        /* SKILLS */
 
-/* SKILLS */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
 
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
-}
+        .skill {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
 
-.skill{
-background:white;
-padding:20px;
-text-align:center;
-border-radius:8px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-font-weight:bold;
-}
+        /* PROJECTS */
 
-/* PROJECTS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
 
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
 
-.project{
-background:white;
-padding:25px;
-border-radius:8px;
-box-shadow:0 4px 12px rgba(0,0,0,0.15);
-}
+        .project h3 {
+            margin-bottom: 10px;
+        }
 
-.project h3{
-margin-bottom:10px;
-}
+        /* EDUCATION & CERTIFICATIONS */
 
-/* EDUCATION */
+        .education {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.education{
-background:white;
-padding:20px;
-border-radius:8px;
-margin-bottom:15px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-}
+        /* FOOTER */
 
-/* FOOTER */
-
-.footer{
-background:#131921;
-color:white;
-text-align:center;
-padding:25px;
-}
-
-</style>
+        .footer {
+            background: #131921;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+    <!-- NAVBAR -->
 
-<div class="navbar">
+    <div class="navbar">
 
-<div class="logo">Akhil.dev</div>
+        <div class="logo">Akhil.dev</div>
 
-<div class="navlinks">
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
-</div>
+        <div class="navlinks">
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
 
-</div>
+    </div>
 
 
-<!-- HERO -->
+    <!-- HERO -->
 
-<section class="hero">
+    <section class="hero">
 
-<h1>Mankala Akhil</h1>
+        <h1>Mankala Akhil</h1>
 
-<p>Computer Science Student | AI Developer | Software Engineer</p>
+        <p>Computer Science Student | AI Developer | Software Engineer</p>
 
-<!-- GITHUB LINK -->
+        <a class="btn" href="https://github.com/mankalaakhil103-lgtm" target="_blank">
+            GitHub
+        </a>
 
-<a class="btn"
-href="https://github.com/mankalaakhil103-lgtm"
-target="_blank">
-GitHub
-</a>
+        <a class="btn" href="https://leetcode.com/u/akhil103/" target="_blank">
+            LeetCode
+        </a>
 
-<!-- LEETCODE LINK -->
+    </section>
 
-<a class="btn"
-href="https://leetcode.com/u/akhil103/"
-target="_blank">
-LeetCode
-</a>
 
-</section>
+    <!-- SKILLS -->
 
+    <section class="section" id="skills">
 
-<!-- SKILLS -->
+        <h2>Technical Skills</h2>
 
-<section class="section" id="skills">
+        <div class="skills">
 
-<h2>Technical Skills</h2>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">C</div>
+            <div class="skill">C++</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">SQL</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">FastAPI</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">MongoDB</div>
+            <div class="skill">Git</div>
 
-<div class="skills">
+        </div>
 
-<div class="skill">Java</div>
-<div class="skill">Python</div>
-<div class="skill">C</div>
-<div class="skill">C++</div>
-<div class="skill">JavaScript</div>
-<div class="skill">SQL</div>
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">FastAPI</div>
-<div class="skill">MySQL</div>
-<div class="skill">MongoDB</div>
-<div class="skill">Git</div>
+    </section>
 
-</div>
 
-</section>
+    <!-- PROJECTS -->
 
+    <section class="section" id="projects">
 
-<!-- PROJECTS -->
+        <h2>Projects</h2>
 
-<section class="section" id="projects">
+        <div class="projects">
 
-<h2>Projects</h2>
+            <div class="project">
 
-<div class="projects">
+                <h3>Scene Solver – AI Crime Detection</h3>
 
-<div class="project">
+                <p>AI based anomaly detection system for surveillance video using transformers and CLIP embeddings.</p>
 
-<h3>Scene Solver – AI Crime Detection</h3>
+                <a class="btn" href="https://github.com/mankalaakhil103-lgtm/crime-solver" target="_blank">
+                    View on GitHub
+                </a>
 
-<p>AI based anomaly detection system for surveillance video using transformers and CLIP embeddings.</p>
+            </div>
 
-<a class="btn"
-href="https://github.com/mankalaakhil103-lgtm/crime-solver"
-target="_blank">
-View on GitHub
-</a>
 
-</div>
+            <div class="project">
 
+                <h3>Library Management System</h3>
 
-<div class="project">
+                <p>System to manage books, users and transactions using database integration.</p>
 
-<h3>Library Management System</h3>
+            </div>
 
-<p>System to manage books, users and transactions using database integration.</p>
+        </div>
 
+    </section>
 
-</div>
 
-</div>
+    <!-- CERTIFICATIONS -->
 
-</section>
+    <section class="section" id="certifications">
 
+        <h2>Certifications</h2>
 
-<!-- EDUCATION -->
+        <div class="education">
 
-<section class="section" id="education">
+            <h3>GenAI Powered Data Analytics Job Simulation</h3>
 
-<h2>Education</h2>
+            <p>
+                Completed a practical job simulation focused on data analytics using Generative AI tools.
+                Performed dataset review, data quality analysis, and extracted insights to support
+                business decision making.
+            </p>
 
-<div class="education">
-<h3>Keshav Memorial Group of Institutions</h3>
-<p>B.Tech Computer Science (2023 – 2027)</p>
-</div>
+        </div>
 
-<div class="education">
-<h3>Aditya Junior College</h3>
-<p>Intermediate MPC (2021 – 2023)</p>
-</div>
+    </section>
 
-<div class="education">
-<h3>Sri Sai Public School</h3>
-<p>SSC</p>
-</div>
 
-</section>
+    <!-- EDUCATION -->
 
+    <section class="section" id="education">
 
-<!-- CONTACT -->
+        <h2>Education</h2>
 
-<section class="section" id="contact">
+        <div class="education">
+            <h3>Keshav Memorial Group of Institutions</h3>
+            <p>B.Tech Computer Science (2023 – 2027)</p>
+        </div>
 
-<h2>Contact</h2>
+        <div class="education">
+            <h3>Aditya Junior College</h3>
+            <p>Intermediate MPC (2021 – 2023)</p>
+        </div>
 
-<p>Email: Mankalaakhil103@gmail.com</p>
+        <div class="education">
+            <h3>Sri Sai Public School</h3>
+            <p>SSC</p>
+        </div>
 
-<p>Phone: +91 6281779375</p>
+    </section>
 
-<p>
 
-<a href="https://github.com/mankalaakhil103-lgtm" target="_blank">
-GitHub
-</a>
+    <!-- CONTACT -->
 
-|
+    <section class="section" id="contact">
 
-<a href="https://leetcode.com/u/akhil103/" target="_blank">
-LeetCode
-</a>
+        <h2>Contact</h2>
 
-</p>
+        <p>Email: Mankalaakhil103@gmail.com</p>
 
-</section>
+        <p>Phone: +91 6281779375</p>
 
+        <p>
 
-<div class="footer">
+            <a href="https://github.com/mankalaakhil103-lgtm" target="_blank">
+                GitHub
+            </a>
 
-<p>© 2026 Mankala Akhil Portfolio</p>
+            |
 
-</div>
+            <a href="https://leetcode.com/u/akhil103/" target="_blank">
+                LeetCode
+            </a>
+
+        </p>
+
+    </section>
+
+
+    <div class="footer">
+
+        <p>© 2026 Mankala Akhil Portfolio</p>
+
+    </div>
 
 </body>
+
 </html>
